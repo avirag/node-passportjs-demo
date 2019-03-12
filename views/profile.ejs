@@ -38,6 +38,15 @@
         padding: 0 10px;
         color: #333;
     }
+    main img{
+        width: 40px;
+        margin-right: 10px;
+        position: relative;
+        top: 12px;
+    }
+    main p{
+        display: inline-block;
+    }
   </style>
 </head>
 
@@ -58,9 +67,8 @@
     <h1>Welcome to your profile, <%= user.username %></h1>
   </header>
   <main>
-    <p>
-      extra information
-    </p>
+    <img src="<%= user.thumbnail %>" />
+    <p>Profile thumbnail</p>
   </main>
 </body>
 
